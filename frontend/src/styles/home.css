@@ -1,4 +1,8 @@
-/* General section and hero content styling */
+/* 
+====================================
+  General Page / Hero Styling
+====================================
+*/
 .home {
   min-height: 100vh;
   display: flex;
@@ -6,7 +10,7 @@
   justify-content: center;
   padding: 2rem;
   background: linear-gradient(rgba(12, 20, 36, 0.95), rgba(12, 20, 36, 0.95)),
-    url('../images/backgorund.png') center/cover fixed;
+    url('../images/background.png') center/cover fixed;
   color: #fff;
   position: relative;
   margin-top: 50px;
@@ -63,15 +67,18 @@
   color: #cbd5e0;
 }
 
-/* About & Contact Cards Container (removed hover effects on the container) */
+/* 
+====================================
+  About & Contact Cards
+====================================
+*/
 .about-contact-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  margin: 3rem 0; /* space above and below the cards */
+  margin: 3rem 0;
 }
 
-/* About & Contact Card Styles */
 .about-card,
 .contact-card {
   background: rgba(255, 255, 255, 0.05);
@@ -138,7 +145,247 @@
   transform: scale(1.05);
 }
 
-/* Skills Grid - display categories side by side (removed container hover effect) */
+/* 
+====================================
+  Experience Card (Horizontal, Deep Blue Gradient)
+====================================
+*/
+.experience-card-alt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 800px;
+  margin: 3rem auto 0;
+  background: linear-gradient(135deg, rgba(0, 0, 139, 0.15), rgba(0, 0, 205, 0.15));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: left;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card-alt:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Left side: Experience Image/Logo */
+.experience-image {
+  flex: 0 0 150px;
+  margin-right: 1.5rem;
+}
+
+.experience-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Right side: Experience Info */
+.experience-info {
+  flex: 1;
+}
+
+.experience-title {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.experience-icons {
+  margin: 0.5rem 0;
+}
+
+.experience-period {
+  font-size: 1rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+
+.experience-list-alt {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.2rem;
+}
+
+.experience-list-alt li {
+  font-size: 1rem;
+  color: #cbd5e0;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.experience-viewmore {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #00008b, #0000cd);
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.experience-viewmore:hover {
+  background: linear-gradient(135deg, #0000cd, #00008b);
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 139, 0.5);
+}
+
+.experience-viewmore:active {
+  transform: translateY(1px);
+  box-shadow: 0px 3px 8px rgba(0, 0, 139, 0.3);
+}
+
+/* 
+====================================
+  Project Card (Horizontal, Blueish Gradient)
+====================================
+*/
+.project-card-alt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 800px;
+  margin: 3rem auto 0;
+  background: linear-gradient(135deg, rgba(0, 198, 255, 0.15), rgba(0, 114, 255, 0.15));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: left;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card-alt:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-image {
+  flex: 0 0 150px;
+  margin-right: 1.5rem;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-title {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.project-period {
+  font-size: 1rem;
+  color: #00cf5d;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #cbd5e0;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+
+.project-icons {
+  margin-bottom: 1.2rem;
+}
+
+.project-icons .tech-icon {
+  font-size: 1.5rem;
+  color: #00cf5d;
+  margin-right: 0.5rem;
+}
+
+.github-link-alt {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.github-link-alt:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 15px rgba(0, 114, 255, 0.5);
+}
+
+.github-link-alt:active {
+  transform: translateY(1px);
+  box-shadow: 0px 3px 8px rgba(0, 114, 255, 0.3);
+}
+
+/* 
+====================================
+  Additional Button for Projects Page
+====================================
+*/
+.projects-button-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.projects-viewmore {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #ff7f50, #ff4500);
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.projects-viewmore:hover {
+  background: linear-gradient(135deg, #ff4500, #ff7f50);
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 15px rgba(255, 69, 0, 0.5);
+}
+
+.projects-viewmore:active {
+  transform: translateY(1px);
+  box-shadow: 0px 3px 8px rgba(255, 69, 0, 0.3);
+}
+
+/* 
+====================================
+  Skills Grid
+====================================
+*/
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -148,7 +395,6 @@
   z-index: 1;
 }
 
-/* Category Section Styling */
 .category-section {
   margin-bottom: 0;
   transition: transform 0.3s ease;
@@ -158,9 +404,8 @@
   transform: translateY(-3px);
 }
 
-/* Optional: Push down the third category (Databases) slightly */
 .category-section:nth-child(3) {
-  margin-top: 3.2rem; /* adjust this value as needed */
+  margin-top: 3.2rem; 
 }
 
 .category-name {
@@ -177,14 +422,12 @@
   color: #00cf5d;
 }
 
-/* Skill Cards Grid (removed container hover effect) */
 .skill-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 1.5rem;
 }
 
-/* Skill Card Styles */
 .skill-card {
   background: rgba(255, 255, 255, 0.05);
   padding: 1.5rem;
@@ -224,7 +467,11 @@
   color: #ffffff;
 }
 
-/* Responsive Breakpoints */
+/* 
+====================================
+  Responsive Breakpoints
+====================================
+*/
 @media (max-width: 992px) {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -235,8 +482,58 @@
   .skills-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .about-contact-container {
     grid-template-columns: 1fr;
+  }
+
+  /* Experience Card becomes vertical on smaller screens */
+  .experience-card-alt {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experience-image {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .experience-title {
+    justify-content: center;
+  }
+
+  .experience-period {
+    text-align: center;
+  }
+
+  .experience-list-alt {
+    text-align: center;
+  }
+
+  /* Project Card also becomes vertical */
+  .project-card-alt {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-image {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-title {
+    text-align: center;
+  }
+
+  .project-period {
+    text-align: center;
+  }
+
+  .project-description {
+    text-align: center;
+  }
+
+  .project-icons {
+    text-align: center;
   }
 }
