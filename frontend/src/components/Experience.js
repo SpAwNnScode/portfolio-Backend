@@ -10,19 +10,6 @@ import ecklebeLogo from "../images/ecklebe-logo.png";
 const Experience = () => {
   const experienceItems = [
     {
-      title: "Werkstudent Software Entwickler @ UniNow GmbH",
-      period: "Mar 2024 – Present, Magdeburg",
-      logo: uninowLogo, 
-      points: [
-        "Developing and optimizing web-scraping solutions using Node.js, Puppeteer, and Cheerio.",
-        "Extracting and analyzing university data with efficient server-side HTML parsing and browser automation.",
-        "Creating detailed technical documentation for maintenance and further development."
-      ],
-      icons: [<FaLaptopCode className="tech-icon" key="laptop" />,
-         <FaServer className="tech-icon" key="server" />,
-        <FaNodeJs className="tech-icon" key="nodejs" />]
-    },
-    {
       title: "Unterstützung der IT-Abteilung @ Dr. Ecklebe GmbH",
       period: "Oct 2023 – Jan 2024, Magdeburg",
       logo: ecklebeLogo, 
@@ -35,6 +22,19 @@ const Experience = () => {
         <FaServer className="tech-icon" key="server" />,
         <SiCsharp className="tech-icon" key="server" />
       ]
+    },
+   {
+      title: "Werkstudent Software Entwickler @ UniNow GmbH",
+      period: "Mar 2024 – Present, Magdeburg",
+      logo: uninowLogo, 
+      points: [
+        "Developing and optimizing web-scraping solutions using Node.js, Puppeteer, and Cheerio.",
+        "Extracting and analyzing university data with efficient server-side HTML parsing and browser automation.",
+        "Creating detailed technical documentation for maintenance and further development."
+      ],
+      icons: [<FaLaptopCode className="tech-icon" key="laptop" />,
+         <FaServer className="tech-icon" key="server" />,
+        <FaNodeJs className="tech-icon" key="nodejs" />]
     }
   ];
 
@@ -53,7 +53,7 @@ const Experience = () => {
             transition={{ duration: 0.6, delay: index * 0.2 }}
           >
             <img 
-              src={item.logo} // Use directly imported logo
+              src={item.logo} 
               alt="Company logo" 
               className="company-logo" 
               onError={(e) => {
