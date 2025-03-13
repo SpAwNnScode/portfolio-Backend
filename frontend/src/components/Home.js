@@ -19,7 +19,7 @@ import {
 import { SiCsharp, SiExpress, SiPostgresql } from "react-icons/si";
 
 // Images
-import uninowLogo from "../images/uninow-logo.png";
+import uninowLogo from "../images/unino.png";
 import todooScreenshot from "../images/todo.png";
 
 // Styles
@@ -28,7 +28,7 @@ import "../styles/home.css";
 function Home() {
   // Highlighted Experience
   const experienceHighlight = {
-    title: "Werkstudent Software Entwickler @ UniNow GmbH",
+    title: "Werkstudent Software Entwickler @UniNow",
     period: "Mar 2024 – Present, Magdeburg",
     logo: uninowLogo,
     points: [
@@ -155,12 +155,22 @@ function Home() {
           </motion.div>
         </div>
 
+        {/* Section Heading for Experience */}
+        <motion.h2
+          className="section-heading"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          Professional Experience
+        </motion.h2>
+
         {/* Experience Card (Horizontal, Deep Blue Gradient) */}
         <motion.div
           className="experience-card-alt"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
         >
           {/* Logo on the left */}
           <div className="experience-image">
@@ -189,12 +199,22 @@ function Home() {
           </div>
         </motion.div>
 
+        {/* Section Heading for Projects */}
+        <motion.h2
+          className="section-heading"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          Projects
+        </motion.h2>
+
         {/* Project Card (Horizontal, Blueish Gradient) */}
         <motion.div
           className="project-card-alt"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
         >
           <div className="project-image">
             <img src={projectHighlight.screenshot} alt="Todoo App Screenshot" />
@@ -229,9 +249,18 @@ function Home() {
         {/* Additional Button for Projects Page */}
         <div className="projects-button-container">
           <Link to="/projects" className="projects-viewmore">
-            View Projects
+            View all Projects
           </Link>
         </div>
+
+        <motion.h2
+          className="section-heading"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          Technical Skills
+        </motion.h2>
 
         {/* Skills Grid */}
         <div className="skills-grid">
