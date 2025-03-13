@@ -23,8 +23,8 @@ const Experience = () => {
         <SiCsharp className="tech-icon" key="server" />
       ]
     },
-   {
-      title: "Werkstudent Software Entwickler @ UniNow GmbH",
+    {
+      title: "Werkstudent Software Entwickler @ UniNow",
       period: "Mar 2024 – Present, Magdeburg",
       logo: uninowLogo, 
       points: [
